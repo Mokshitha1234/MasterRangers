@@ -1,8 +1,8 @@
 // Create a variable canvas
-var canvas = new fabric.Canvas('mycanvas')
+var canvas = new fabric.Canvas('myCanvas')
 
-block_y=1;
-block_x=1;
+block_y=100;
+block_x=100;
 
 block_image_width = 350;
 block_image_height = 480;
@@ -30,7 +30,7 @@ function my_keydown(e)
 keyPressed = e.keyCode;
 console.log(keyPressed);
 	// Use appropriate keycode to add red image
-	if(keyPressed == 82) 
+	if(keyPressed == '82') 
 	{
 		block_x= 10;
         new_image('red.jpg')
@@ -38,7 +38,7 @@ console.log(keyPressed);
 
 	}
 	// Use appropriate keycode to add green image
-	if(keyPressed == 71)
+	if(keyPressed == '71')
 	{
 		block_x= 310;
 		new_image('green.png')
@@ -47,7 +47,7 @@ console.log(keyPressed);
 
 	}
 	// Use appropriate keycode to add yellow image
-	if(keyPressed == 89)
+	if(keyPressed == '89')
 	{
 		block_x= 560;
 		new_image('yellow.png')
@@ -56,7 +56,7 @@ console.log(keyPressed);
 
 	}
 	// Use appropriate keycode to add pink image
-	if(keyPressed == 80)
+	if(keyPressed == '80')
 	{
 		block_x= 880;
 		new_image('pink.png')
@@ -65,7 +65,7 @@ console.log(keyPressed);
 
 	}
 	// Use appropriate keycode to add blue image
-	if(keyPressed == 66)
+	if(keyPressed == '66')
 	{
         block_x= 1040;	
 		new_image('blue.png');
